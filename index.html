@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <h1 id="title">RHS Chronic Absenteeism Indicator Score</h1>
-    <div class="sub" id="sub">Auto-updates from Google Sheets</div>
+    <div class="sub">Auto-updates from Google Sheets</div>
   </header>
 
   <main class="container">
@@ -23,6 +23,7 @@
         <div class="center-readout">
           <div class="label">Indicator Score</div>
           <div class="value" id="scoreText">—</div>
+          <div class="meta" id="zoneText">—</div>
           <div class="meta" id="updatedText">—</div>
         </div>
       </div>
@@ -38,10 +39,11 @@
         <div class="details-grid">
           <div><b>Min</b><div id="minVal">—</div></div>
           <div><b>Max</b><div id="maxVal">—</div></div>
+          <div><b>Red starts</b><div id="rStartVal">—</div></div>
           <div><b>Yellow starts</b><div id="yStartVal">—</div></div>
           <div><b>Green starts</b><div id="gStartVal">—</div></div>
         </div>
-        <p class="note">Source: Google Sheets tab published as CSV.</p>
+        <p class="note">Scale and thresholds are read from the published Google Sheet tab.</p>
       </details>
     </section>
   </main>

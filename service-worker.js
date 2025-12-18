@@ -1,4 +1,4 @@
-const CACHE='rhs-gauge-v1';
+const CACHE='rhs-gauge-v2';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./assets/icon.png'];
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(self.skipWaiting())));
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));

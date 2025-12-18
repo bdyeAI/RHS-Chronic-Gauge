@@ -1,6 +1,5 @@
 :root{
 --brand:#0b3d91; --bg:#f6f7fb; --card:#fff; --text:#12141a; --muted:#5b6270;
---red:#d64545; --yellow:#f4b400; --green:#0f9d58;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui;background:var(--bg)}
@@ -11,35 +10,26 @@ body{margin:0;font-family:system-ui;background:var(--bg)}
 #gauge{width:100%;height:auto}
 
 .center-readout{
-position:absolute;
-left:50%;
-bottom:4%;
+position:absolute; left:50%; bottom:4%;
 transform:translateX(-50%);
-width:68%;
-max-width:360px;
+width:68%; max-width:360px;
 background:rgba(255,255,255,.92);
 border-radius:14px;
 padding:.5rem;
 text-align:center;
 }
-
-.center-readout .label{font-size:.85rem;color:var(--muted)}
+.center-readout .label{font-size:.85rem;color:#5b6270}
 .center-readout .value{font-size:1.9rem;font-weight:900}
 .center-readout .zone{font-size:.85rem;font-weight:700}
-.center-readout .updated{font-size:.7rem;color:var(--muted)}
+.center-readout .updated{font-size:.7rem;color:#5b6270}
 
 .legend{text-align:center;margin-top:.5rem}
 .pill{display:inline-block;padding:.3rem .6rem;border-radius:999px;font-size:.8rem}
-.pill.red{background:#fdecec;color:var(--red)}
+.pill.red{background:#fdecec;color:#d64545}
 .pill.yellow{background:#fff7e0;color:#9c6b00}
 .pill.green{background:#e7f6ef;color:#0f9d58}
 
-/* iPhone-specific tightening */
-@media (max-width: 430px){
-  .center-readout{
-    width:60%;
-    bottom:2%;
-    padding:.4rem;
-  }
+@media (max-width:430px){
+  .center-readout{width:60%; bottom:2%;}
   .center-readout .value{font-size:1.6rem}
 }

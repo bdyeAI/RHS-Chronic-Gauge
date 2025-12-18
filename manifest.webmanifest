@@ -1,6 +1,7 @@
 {
   "name": "RHS Chronic Indicator",
   "short_name": "RHS Indicator",
+"version": "v4",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#0b3d91",

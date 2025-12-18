@@ -1,57 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>RHS Chronic Absenteeism Indicator Score</title>
-  <meta name="theme-color" content="#0b3d91">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="assets/icon.png">
-  <link rel="apple-touch-icon" href="assets/icon.png">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RHS Chronic Absenteeism Indicator Score</title>
+<meta name="theme-color" content="#0b3d91">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <h1 id="title">RHS Chronic Absenteeism Indicator Score</h1>
-    <div class="sub">Auto-updates from Google Sheets</div>
-  </header>
+<header class="header">
+  <h1>RHS Chronic Absenteeism Indicator Score</h1>
+  <div class="sub">Auto-updates from Google Sheets</div>
+</header>
 
-  <main class="container">
-    <section class="card">
-      <div class="gauge-wrap">
-        <svg id="gauge" viewBox="0 0 1000 640" role="img" aria-label="Speedometer gauge chart"></svg>
-        <div class="center-readout">
-          <div class="label">Indicator Score</div>
-          <div class="value" id="scoreText">—</div>
-          <div class="meta" id="zoneText">—</div>
-          <div class="meta" id="updatedText">—</div>
-        </div>
-      </div>
+<main class="container">
+<section class="card">
+  <div class="gauge-wrap">
+    <svg id="gauge" viewBox="0 0 1000 640"></svg>
 
-      <div class="legend">
-        <div class="pill red"><span class="dot"></span><span id="redLabel">Red</span></div>
-        <div class="pill yellow"><span class="dot"></span><span id="yellowLabel">Yellow</span></div>
-        <div class="pill green"><span class="dot"></span><span id="greenLabel">Green</span></div>
-      </div>
+    <div class="center-readout">
+      <div class="label">Indicator Score</div>
+      <div class="value" id="scoreText">—</div>
+      <div class="zone" id="zoneText">—</div>
+      <div class="updated" id="updatedText">—</div>
+    </div>
+  </div>
 
-      <details class="details">
-        <summary>Show details</summary>
-        <div class="details-grid">
-          <div><b>Min</b><div id="minVal">—</div></div>
-          <div><b>Max</b><div id="maxVal">—</div></div>
-          <div><b>Red starts</b><div id="rStartVal">—</div></div>
-          <div><b>Yellow starts</b><div id="yStartVal">—</div></div>
-          <div><b>Green starts</b><div id="gStartVal">—</div></div>
-        </div>
-        <p class="note">Scale and thresholds are read from the published Google Sheet tab.</p>
-      </details>
-    </section>
-  </main>
+  <div class="legend">
+    <span class="pill red">Red</span>
+    <span class="pill yellow">Yellow</span>
+    <span class="pill green">Green</span>
+  </div>
+</section>
+</main>
 
-  <footer class="footer">
-    <span id="status">Loading…</span>
-  </footer>
-
-  <script src="app.js"></script>
+<footer class="footer"><span id="status">Loading…</span></footer>
+<script src="app.js"></script>
 </body>
 </html>
